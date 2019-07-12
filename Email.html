@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateEmail(email) {
+        let RegularExpressionPattern = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        return RegularExpressionPattern.test(email);
+    }
+    console.log(validateEmail('@gmail.com'));
+    console.log(validateEmail("ab@gmail."));
+    console.log(validateEmail("@#abc@gmail.com"));
+    console.log(validateEmail("abc@gmail.com"));
+    console.log(validateEmail("abc@hotmail.com"));
+    console.log(validateEmail("ab@yahoo.com"))
+</script>
+</body>
+</html>
